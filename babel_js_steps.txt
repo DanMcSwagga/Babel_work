@@ -1,0 +1,15 @@
+1) 	npm init
+2) 	поставить babel локально
+	npm install --save-dev babel-cli -babel-preset-env
+3)	подключить пресеты -> создать .babelrc
+	touch .babelrc
+	и вложить в него
+	{
+		"presets": ["env"]
+	}
+4)	непосредственная компиляция
+	./node_modules/.bin/babel filename.js
+5)	запуск
+	node filename.js
+4.5)можно также компилить и запускать одновременно
+	./node_modules/.bin/babel filename.js && filename.js
